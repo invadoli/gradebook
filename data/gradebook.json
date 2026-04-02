@@ -3,19 +3,84 @@
         {
             "id": 1,
             "name": "Inva"
+        },
+        {
+            "id": 2,
+            "name": "Urata Smakiqi"
+        },
+        {
+            "id": 3,
+            "name": "Berat Ujkani"
+        },
+        {
+            "id": 4,
+            "name": "Urata Smakiqi"
+        },
+        {
+            "id": 5,
+            "name": "Berat Ujkani"
+        },
+        {
+            "id": 6,
+            "name": "Urata Smakiqi"
+        },
+        {
+            "id": 7,
+            "name": "Berat Ujkani"
+        },
+        {
+            "id": 8,
+            "name": "Urata Smakiqi"
+        },
+        {
+            "id": 9,
+            "name": "Berat Ujkani"
         }
     ],
     "courses": [
         {
             "code": "CS101",
             "title": "Intro to CS"
+        },
+        {
+            "code": "CS102",
+            "title": "Introduction to Programming"
+        },
+        {
+            "code": "MATH201",
+            "title": "Calculus I"
         }
     ],
     "enrollments": [
         {
             "student_id": 1,
             "course_code": "CS101",
-            "grades": []
+            "grades": [
+                90,
+                100
+            ]
+        },
+        {
+            "student_id": 6,
+            "course_code": "CS102",
+            "grades": [
+                92,
+                88
+            ]
+        },
+        {
+            "student_id": 6,
+            "course_code": "MATH201",
+            "grades": [
+                75
+            ]
+        },
+        {
+            "student_id": 7,
+            "course_code": "CS102",
+            "grades": [
+                85
+            ]
         }
     ]
 }
