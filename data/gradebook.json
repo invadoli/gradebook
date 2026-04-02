@@ -11,5 +11,11 @@
             "title": "Intro to CS"
         }
     ],
-    "enrollments": []
+    "enrollments": [
+        {
+            "student_id": 1,
+            "course_code": "CS101",
+            "grades": []
+        }
+    ]
 }
