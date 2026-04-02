@@ -1,5 +1,6 @@
 import argparse
 from gradebook import service
+from gradebook.utils import parse_grade
 
 def main():
     parser = argparse.ArgumentParser(description="Gradebook CLI Management System")
@@ -55,9 +56,10 @@ def main():
             print(f"Enrolled student {args.student_id} in course {args.course}")
 
         elif args.command == "add-grade":
-            service.add_grade(args.student_id, args.course, args.grade)
-            print(f"Added grade {args.grade} for student {args.student_id} in {args.course}")
-
+            validated_grade = parse_grade(args.grade)
+            service.add_grade(args.student_id, args.course, validated_grade)
+            print(f"Added grade {validated_grade} for student {args.student_id} in {args.course}")
+            
         elif args.command == "list":
             items = []
             if args.category == "students":
